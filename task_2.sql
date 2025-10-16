@@ -1,10 +1,10 @@
-
+-- Create AUTHORS table
 CREATE TABLE IF NOT EXISTS Authors (
 author_id INT PRIMARY KEY AUTO_INCREMENT,
 author_name VARCHAR(215)
 );
 
-
+-- Create BOOKS table
 CREATE TABLE IF NOT EXISTS Books(
 book_id INT PRIMARY KEY AUTO_INCREMENT,
 title VARCHAR(130),
@@ -13,15 +13,16 @@ price DOUBLE,
 publication_date DATE,
 FOREIGN KEY (author_id) REFERENCES AuthorS (author_id)
 );
+
+-- Create CUSTOMERS table
 CREATE TABLE IF NOT EXISTS Customers(
 customer_id  INT PRIMARY KEY AUTO_INCREMENT,
 customer_name VARCHAR(215),
 email VARCHAR(215),
 address TEXT
-
 );
 
-
+-- Create ORDERS table
 CREATE TABLE IF NOT EXISTS Orders(
 order_id INT PRIMARY KEY AUTO_INCREMENT,
 customer_id INT,
@@ -30,6 +31,7 @@ FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 
 );
 
+-- Create ORDERS DETAILS table
 CREATE TABLE IF NOT EXISTS Order_Details(
 orderdetailid INT PRIMARY KEY AUTO_INCREMENT,
 order_id INT,
