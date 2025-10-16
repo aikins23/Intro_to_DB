@@ -21,7 +21,6 @@ def Create_DB():
             print("MySQL connection is closed")
 
 
-if __name__ == "__main__":
-    Create_DB()
+
 
 
