@@ -1,0 +1,51 @@
+##a = 10
+##b = 5.0
+##name = "Emmanuel"
+##isStuent = True
+##
+##print(f"{a} is datatype {type(a)}")
+##print(f"{b} is datatype {type(b)}")
+##print(f"{name} is datatype {type(name)}")
+##print(f"{isStuent} is datatype {type(isStuent)}")
+##
+##
+##
+
+##Arthimethic Operation
+##+ = Addition
+## - subtraction
+##* = Multiplication
+##** = Exponent
+##/ = Division
+##// = floor Division
+##%
+
+name = str(input("Enter your name: "))
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter Second number: "))
+
+print("Hello ", name, " welcome to my calculator app")
+result_Addition = num1 +num2
+print("The result of the addition of " , result_Addition)
+
+result_Subtraction = num1-num2
+print("The result of the subtraction is " , result_Subtraction)
+
+result_Multiplication = num1*num2
+print("The result of the multiplication of " , result_Multiplication)
+
+result_Expo = num1**num2
+print("The result of the exponent is " , result_Expo)
+
+result_Divi = num1/num2
+print("The result of the Division is " , result_Divi)
+
+result_fDivi = num1//num2
+print("The result of the Floor Division is " , result_fDivi)
+
+result_mo = num1%num2
+print("The result of the modulor is " , result_mo)
+
+
+
+
